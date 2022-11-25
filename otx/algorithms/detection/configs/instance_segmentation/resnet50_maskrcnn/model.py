@@ -21,6 +21,8 @@ _base_ = [
     "../../base/models/detector.py",
 ]
 
+runner = dict(max_epochs=10)
+
 task = "instance-segmentation"
 
 model = dict(

@@ -39,7 +39,7 @@ def nncf_trace_context(self, img_metas, nncf_compress_postprocessing=True):
     yield
 
     # make everything normal
-    self.forward = forward_backup
+    self.__dict__.pop("forward")
     self = self.to(device_backup)
 
 

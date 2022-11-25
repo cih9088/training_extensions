@@ -146,7 +146,7 @@ class BaseTask(IInferenceTask, IExportTask, IEvaluationTask, IUnload):
 
     def __del__(self):
         """Del function for remove model checkpoints."""
-        self._delete_scratch_space()
+        #  self._delete_scratch_space()
 
     def _pre_task_run(self):
         pass
